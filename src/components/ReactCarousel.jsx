@@ -1,5 +1,6 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
+// import { FaBeer } from "react-icons/fa";
 
 const images = [
   {
@@ -15,16 +16,19 @@ const images = [
 
 const ReactCarousel = () => {
   return (
-    <div className="flex items-center justify-center">
-      <SimpleImageSlider
-        width={896}
-        height={504}
-        images={images}
-        showBullets={false}
-        showNavs={true}
-        autoPlay
-      />
-    </div>
+    <>
+      {/* <FaBeer /> */}
+      <div className="flex items-center justify-center">
+        <SimpleImageSlider
+          width={896}
+          height={504}
+          images={images}
+          showBullets={false}
+          showNavs={true}
+          autoPlay
+        />
+      </div>
+    </>
   );
 };
 
